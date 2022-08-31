@@ -1,9 +1,9 @@
 <template>
 <ul class="menu">
   <li><router-link to="/">Basic</router-link></li>
-  <li><router-link to="/">Edit</router-link></li>
-  <li><router-link to="/">Setting</router-link></li>
-  <li style="position: absolute;bottom: 0"><router-link to="/">About</router-link></li>
+  <li><router-link to="/edit">Edit</router-link></li>
+  <li><router-link to="/setting">Setting</router-link></li>
+  <li style="position: absolute;bottom: 0"><router-link to="/about">About</router-link></li>
 </ul>
 </template>
 

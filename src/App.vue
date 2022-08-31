@@ -30,10 +30,4 @@ export default {
   margin: 0;
   padding: 0;
 }
-router-view {
-  position: absolute;
-  right: 0;
-  height: 100vh;
-  width: calc(100vw - 80px);
-}
 </style>
