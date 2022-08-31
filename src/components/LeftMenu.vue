@@ -8,19 +8,6 @@
 </template>
 
 <script>
-import {createRouter,createWebHashHistory} from "vue-router";
-
-const routes = [
-  {path: '/', components: 'Basic'},
-  {path: '/edit', components: 'Edit'},
-  {path: '/setting', components: 'Setting'}
-];
-
-createRouter({
-  history: createWebHashHistory(),
-  routes
-});
-
 export default {
   name: "LeftMenu"
 }

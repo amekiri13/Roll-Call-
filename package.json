@@ -43,9 +43,6 @@
     },
     "rules": {}
   },
-  "build": {
-    "productName": "点名器"
-  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
