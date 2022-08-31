@@ -36,7 +36,14 @@ export default {
 /*  color: #2c3e50;*/
 /*  margin-top: 60px;*/
 /*}*/
+*{
+  margin: 0;
+  padding: 0;
+}
 router-view {
-
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  width: calc(100vw - 80px);
 }
 </style>
