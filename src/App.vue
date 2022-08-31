@@ -5,16 +5,6 @@
 
 <script>
 import LeftMenu from "./components/LeftMenu";
-import {createRouter,createWebHashHistory} from "vue-router";
-
-const routes = [
-  {path: '/', components: ''}
-];
-
-createRouter({
-  history: createWebHashHistory(),
-  routes
-});
 
 export default {
   name: 'App',

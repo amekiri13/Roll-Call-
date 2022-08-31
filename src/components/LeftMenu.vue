@@ -1,13 +1,26 @@
 <template>
 <ul class="menu">
-  <li></li>
-  <li></li>
-  <li></li>
-  <li style="position: absolute;bottom: 0"></li>
+  <li><router-link to="/">Basic</router-link></li>
+  <li><router-link to="/">Edit</router-link></li>
+  <li><router-link to="/">Setting</router-link></li>
+  <li style="position: absolute;bottom: 0"><router-link to="/">About</router-link></li>
 </ul>
 </template>
 
 <script>
+import {createRouter,createWebHashHistory} from "vue-router";
+
+const routes = [
+  {path: '/', components: 'Basic'},
+  {path: '/edit', components: 'Edit'},
+  {path: '/setting', components: 'Setting'}
+];
+
+createRouter({
+  history: createWebHashHistory(),
+  routes
+});
+
 export default {
   name: "LeftMenu"
 }
