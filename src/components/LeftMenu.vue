@@ -1,6 +1,9 @@
 <template>
 <ul class="menu">
   <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
 </ul>
 </template>
 
@@ -11,6 +14,10 @@ export default {
 </script>
 
 <style scoped>
+*{
+  margin: 0;
+  padding: 0;
+}
 .menu {
   position: absolute;
   top: 0;
@@ -21,6 +28,10 @@ export default {
   list-style: none;
 }
 .menu>li {
-
+  margin: 10px;
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  background-color: aqua;
 }
 </style>
