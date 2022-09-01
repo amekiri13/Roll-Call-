@@ -1,6 +1,6 @@
 <template>
 <ul class="menu">
-  <li><router-link to="/"><font-awesome-icon icon="fa-solid fa-house" class="icon" /></router-link></li>
+  <li><router-link to="/"><font-awesome-icon icon="fa-solid fa-user-secret" class="icon" /></router-link></li>
   <li><router-link to="/edit">Edit</router-link></li>
   <li><router-link to="/setting">Setting</router-link></li>
   <li style="position: absolute;bottom: 0"><router-link to="/about">About</router-link></li>
@@ -35,6 +35,9 @@ export default {
   background-color: aqua;
   display: flex;
   justify-content: center;
+}
+.menu>li>a{
+  color: black;
 }
 .icon {
   font-size: 40px;
