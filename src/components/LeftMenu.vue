@@ -18,6 +18,9 @@ export default {
       aboutSelected: false,
     }
   },
+  mounted() {
+
+  },
   methods:{
     changeOption:(item) => {
       this.homeSelected = false;
