@@ -10,5 +10,11 @@ export default {
 </script>
 
 <style scoped>
-
+.outside {
+  position: absolute;
+  left: 80px;
+  width: calc(100vw - 80px);
+  height: 100vh;
+  background-color: aqua;
+}
 </style>
