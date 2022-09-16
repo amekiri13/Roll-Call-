@@ -1,6 +1,6 @@
 <template>
 <div class="outside">
-  <h1>首页</h1>
+  <h1>点名器</h1>
   <table>
     <tbody>
       <tr>
@@ -11,8 +11,23 @@
         <td><h3>班级</h3></td>
         <td><input disabled></td>
       </tr>
+    <tr>
+      <td><h3>学号</h3></td>
+      <td><input disabled></td>
+    </tr>
     </tbody>
   </table>
+  <div class="selectPattern">
+    <div>
+      <span>抽取方式</span>
+    </div>
+    <div>
+      <input type="radio" id="random" name="pattern" style="margin-left: 0" checked>
+      <label for="random">随机抽取（伪随机数）</label>
+      <input type="radio" id="order" name="pattern">
+      <label for="order">顺序抽取</label>
+    </div>
+  </div>
 </div>
 </template>
 
@@ -43,5 +58,13 @@ export default {
   height: 25px;
   margin: 0 10px;
   right: 0;
+}
+.selectPattern{
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+.selectPattern > div > input {
+  margin: 0 5px;
 }
 </style>
