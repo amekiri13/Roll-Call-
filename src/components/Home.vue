@@ -1,6 +1,5 @@
 <template>
 <div class="outside">
-  <h1>点名器</h1>
   <table>
     <tbody>
       <tr>
@@ -8,13 +7,21 @@
         <td><input disabled></td>
       </tr>
       <tr>
+        <td><h3>性别</h3></td>
+        <td><input disabled></td>
+      </tr>
+      <tr>
         <td><h3>班级</h3></td>
         <td><input disabled></td>
       </tr>
-    <tr>
-      <td><h3>学号</h3></td>
-      <td><input disabled></td>
-    </tr>
+      <tr>
+        <td><h3>学号</h3></td>
+        <td><input disabled></td>
+      </tr>
+      <tr>
+        <td><h3>头像</h3></td>
+        <td><div class="avatar"></div></td>
+      </tr>
     </tbody>
   </table>
   <div class="selectPattern">
@@ -27,6 +34,9 @@
       <input type="radio" id="order" name="pattern">
       <label for="order">顺序抽取</label>
     </div>
+  </div>
+  <div>
+    <button id="button_start">开始</button>
   </div>
 </div>
 </template>
@@ -48,16 +58,26 @@ export default {
   /*background-color: aqua;*/
 }
 .outside > table {
-  padding: 10px;
+  /*padding: 10px;*/
+  width: calc(100% - 100px);
 }
 .outside > table > tbody > tr > td {
   margin: 5px 0;
 }
 .outside > table > tbody > tr > td > input {
   display: block;
-  height: 25px;
-  margin: 0 10px;
+  height: 30px;
+  margin: 5px 10px;
   right: 0;
+  width: 100%;
+}
+.avatar {
+  width: 300px;
+  height: 300px;
+  background-color: #cccccc;
+  border-radius: 300px;
+  border: none;
+  margin: 10px 10px;
 }
 .selectPattern{
   position: absolute;
@@ -66,5 +86,13 @@ export default {
 }
 .selectPattern > div > input {
   margin: 0 5px;
+}
+#button_start {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  width: 140px;
+  height: 50px;
+  border: none;
 }
 </style>
